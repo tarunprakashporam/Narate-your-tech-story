@@ -1,66 +1,57 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #f4f4f9;
     margin: 0;
     padding: 0;
 }
 
 header {
+    background-color: #4CAF50;
+    color: white;
     text-align: center;
-    background-color: #4CAF50;
-    color: white;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
-main {
-    width: 90%;
-    max-width: 800px;
-    margin: 20px auto;
+#filter-section {
+    text-align: center;
+    margin: 20px 0;
 }
 
-h2 {
-    margin-top: 0;
-}
-
-#add-experience, #experiences {
-    background-color: #ffffff;
-    border: 1px solid #ddd;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 5px;
-}
-
-label {
-    display: block;
-    margin: 10px 0 5px;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-top: 5px;
-    box-sizing: border-box;
-}
-
-button {
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-#experience-list {
+#experiences {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .experience-card {
-    background-color: #e9f5e9;
-    border: 1px solid #c3e6c3;
-    padding: 15px;
+    background-color: white;
+    padding: 20px;
     border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+}
+
+button.like-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button.like-button:hover {
+    background-color: #45a049;
+}
+
+.experience-tag {
+    font-weight: bold;
+}
+
+.like-count {
+    margin-top: 10px;
+    font-size: 18px;
 }
